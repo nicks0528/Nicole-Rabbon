@@ -1,26 +1,3 @@
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Collect form data
-    $fullName = $_POST['full-name'];
-    $dob = $_POST['dob'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $address = $_POST['address'];
-    $city = $_POST['city'];
-    $zip = $_POST['zip'];
-    $currentGrade = $_POST['current-grade'];
-    $preferredProgram = $_POST['preferred-program'];
-    $extraCurricular = $_POST['extra-curricular'];
-    $motivation = $_POST['motivation'];
-
-    // You can now process the data (store it in a database, send email, etc.)
-
-    // For now, let's just show a success message
-    echo "<h1>Application Submitted Successfully</h1>";
-    echo "<p>Thank you for applying to Khan Lab School. We will review your application and get back to you soon.</p>";
-}
-?>
-
 
 <!DOCTYPE html>
 <html lang="en">
