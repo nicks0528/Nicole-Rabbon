@@ -1,0 +1,378 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: #f4f6f9;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(90deg, #3f51b5, #5c6bc0);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  flex-wrap: wrap; /* Allow items to wrap on small screens */
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  margin: 0 15px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffeb3b;
+}
+
+.actions .button {
+  background-color: #ff7043;
+  color: white;
+  padding: 10px 14px;
+  margin-left: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.actions .button:hover {
+  background-color: #ff5722;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 15px; /* Reduced padding for mobile */
+    flex-direction: column; /* Stack elements vertically on mobile */
+    text-align: center; /* Center content */
+  }
+
+  .logo {
+    font-size: 22px; /* Smaller logo size for mobile */
+    margin-bottom: 10px; /* Space between logo and navbar */
+  }
+
+  .navbar {
+    flex-direction: column; /* Stack navbar links vertically */
+    align-items: center; /* Center navbar items */
+    margin-top: 10px; /* Space between logo and navbar */
+  }
+
+  .navbar a {
+    margin: 5px 0; /* Reduced margin between navbar links */
+    font-size: 16px; /* Smaller font size for navbar links */
+  }
+
+  .actions .button {
+    padding: 8px 12px; /* Smaller padding for buttons */
+    font-size: 14px; /* Smaller font size for buttons */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 10px; /* Space above the button */
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 20px; /* Further reduce logo size */
+  }
+
+  .navbar a {
+    font-size: 14px; /* Further reduced font size for navbar links */
+  }
+
+  .actions .button {
+    font-size: 12px; /* Further reduced button font size */
+  }
+}
+
+/* Admissions Section Styling */
+.admissions {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admissions h1 {
+    font-size: 36px;
+    color: #004080;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+/* Admissions Section Styling */
+.admissions {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .admissions h1 {
+    font-size: 38px;
+    color: #003366;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 10px;
+  }
+  /* Admissions Section Styling */
+.admissions {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .admissions:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .admissions h1 {
+    font-size: 40px;
+    color: #00264d;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #00264d;
+    padding-bottom: 12px;
+  }
+  
+  /* Section Styling */
+  .section {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 40px 35px;
+    margin-bottom: 40px;
+    background-color: #f0f7ff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .section:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .section .text {
+    width: 55%;
+    padding: 10px 20px;
+  }
+  
+  .section .text h2 {
+    font-size: 28px;
+    color: #00264d;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  .section .text h2::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background-color: #80bfff;
+    left: 0;
+    bottom: -10px;
+    border-radius: 2px;
+  }
+  
+  .section .text p,
+  .section .text ul {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    margin-top: 15px;
+  }
+  
+  .section .text ul {
+    padding-left: 25px;
+    list-style-type: none;
+    color: #0066cc;
+  }
+  
+  .section .text ul li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .section .text ul li::before {
+    content: "•";
+    color: #0066cc;
+    position: absolute;
+    left: 0;
+    font-size: 22px;
+  }
+  
+  .section .image {
+    width: 45%;
+  }
+  
+  .section .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .section .image img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Alternating Layout */
+  #admission-process .image {
+    order: 1;
+  }
+  
+  #requirements .image {
+    order: 2;
+  }
+  
+  #key-dates .image {
+    order: 1;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #f8f9fa;
+    padding: 25px 0;
+    text-align: center;
+    border-top: 2px solid #ddd;
+  }
+  
+  .footer p {
+    font-size: 15px;
+    color: #666;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .section {
+      flex-direction: column;
+      padding: 25px;
+    }
+  
+    .section .text,
+    .section .image {
+      width: 100%;
+      padding: 0;
+    }
+  
+    .section .image {
+      margin-top: 20px;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .section {
+      flex-direction: column;
+      padding: 25px;
+    }
+  
+    .section .text,
+    .section .image {
+      width: 100%;
+      padding: 0;
+    }
+  
+    .section .image {
+      margin-top: 20px;
+    }
+  }
+  
+  /* General styling for menu icon */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+  .menu-content {
+    display: flex; /* Show menu content on desktop */
+    flex-direction: row;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Show menu icon on mobile */
+  }
+
+  .menu-content {
+    display: none; /* Hide menu content on mobile by default */
+    flex-direction: column;
+    background-color: #3f51b5;
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    top: 50px; /* Position it under the header */
+    left: 0;
+    z-index: 1;
+  }
+
+  /* Show menu content when active */
+  .menu-content.active {
+    display: flex;
+  }
+
+  /* Style menu items on mobile */
+  .navbar a, .actions .button {
+    margin: 10px 0;
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
