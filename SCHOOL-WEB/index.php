@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Website</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+  <div class="container">
+  <div class="logo">
+  <i class="fas fa-school"></i> 
+</div>
+    
+    <!-- Menu Icon for Mobile Toggle -->
+    <div id="menu-icon" class="menu-icon">
+      &#9776; <!-- Unicode for hamburger menu icon -->
+    </div>
+
+    <!-- Menu Content (Initially Hidden on Mobile) -->
+    <div class="menu-content">
+      <nav class="navbar">
+        <a href="index.php">Home</a>
+        <a href="admission.php">Admissions</a>
+        <a href="academics.php">Academics</a>
+        <a href="student.php">Student Life</a>
+        <a href="community.php">Media</a>
+      </nav>
+      
+      <div class="actions">
+        <a href="learn.php" class="button">Learn More</a>
+        <a href="application.php" class="button">Apply</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="images/build.jpg">
+      <div class="carousel-caption d-none d-md-block">
+      <h5 class="carousel-text color-black">"Welcome to Data Center College, where excellence in education is at the heart of everything we do."</h5>
+
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="https://media.istockphoto.com/id/1779070756/photo/two-university-students-walk-down-campus-stairs.webp?a=1&b=1&s=612x612&w=0&k=20&c=6M6XJocLF9P8p2jlAUwZhGGMiosxZcgELucrn7avHNE=" ...">
+      <div class="carousel-caption d-none d-md-block">
+      <h5 class="carousel-text color-black">"Our mission is to nurture the potential of every student, providing a supportive and innovative 
+          learning environment that encourages curiosity, creativity, and critical thinking."</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://media.istockphoto.com/id/1480277406/photo/graduation-group-and-back-view-of-students-celebrate-education-success-behind-of-excited.webp?a=1&b=1&s=612x612&w=0&k=20&c=s82LhvVXDva6TVfWS1hqZE_C6I-5SFPY-e5y2f-stPs="...">
+      <div class="carousel-caption d-none d-md-block">
+      <h5 class="carousel-text color-black">"Join us in shaping the leaders of tomorrow through a holistic approach to education that 
+          values integrity, diversity, and community."</h5>
+
+</h5>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<section class="features-carousel">
+  <h2>Our Features</h2>
+  <div class="feature-carousel">
+    <div class="feature active">
+      <img src="https://media.istockphoto.com/id/1979771761/photo/mature-professor-talking-on-a-class-at-lecture-hall.webp?a=1&b=1&s=612x612&w=0&k=20&c=YaDKhGfzc-WPchCP2O-UqVQh54X1qnAwrdkPsAvXkCA=" alt="Feature 1">
+      <p>A career-oriented curriculum focuses on equipping students with practical skills, industry knowledge, and hands-on experience directly aligned with real-world job demands.</p>
+      <div class="name-tag">Career-Oriented Curriculum</div>
+    </div>
+    <div class="feature">
+      <img src="https://media.istockphoto.com/id/1496195459/photo/young-graduates-throwing-their-mortarboard-in-the-air-while-celebrating-on-graduation.jpg?s=612x612&w=0&k=20&c=-GwKMY9ovlH_Y2SjnWqqUSUhEq1pDcWk2IF0ti5_odc=" alt="Feature 2">
+      <p>Skills for professional success encompass a range of abilities essential for excelling in the workplace, including effective communication, teamwork, problem-solving, adaptability, and time management.</p>
+      <div class="name-tag">Skills for Professional Success</div>
+    </div>
+    <div class="feature">
+      <img src="https://media.istockphoto.com/id/92967725/photo/cologne-university.jpg?s=612x612&w=0&k=20&c=CjN2cRtFYkGEuKFnRB_9elok1QrLBq3fZC4ZrRvd_ao=" alt="Feature 3">
+      <p>A supportive environment is one that fosters growth, inclusivity, and well-being by providing encouragement, resources, and guidance.</p>
+      <div class="name-tag">Supportive Environment</div>
+    </div>
+  </div>
+  <div class="carousel-controls">
+    <button class="prev">Previous</button>
+    <button class="next">Next</button>
+  </div>
+</section>
+
+<!-- Additional Features Section -->
+<section class="additional-features">
+    <div class="features-left">
+        <div class="feature-item">
+            <div class="icon">✔️</div>
+            <div class="feature-text">
+                <h3>Featured Programs</h3>
+                <p>Discover our acclaimed programs designed to unlock your child's potential. From advanced academic courses to a rich tapestry of extracurricular activities, our school provides a holistic education that goes beyond the classroom.</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <div class="icon">✔️</div>
+            <div class="feature-text">
+                <h3>Upcoming Events</h3>
+                <p>Stay connected with our vibrant community through upcoming events. Join us for open houses, student showcases, and interactive webinars to get a firsthand look at the dynamic learning experiences our school offers.</p>
+            </div>
+        </div>
+    </div>
+    <div class="welcome-section">
+        <div class="welcome-box">
+            <h3>Welcome</h3>
+            <p>Welcome to our school, where excellence meets innovation. Our commitment to fostering academic achievement, personal growth, and community engagement sets us apart. Explore a transformative educational journey that prepares students for a future of limitless possibilities. From advanced academic courses to a rich tapestry of extracurricular activities, our school provides a holistic education that goes beyond the classroom.</p>
+            <a href="#">READ MORE</a>
+        </div>
+    </div>
+</section>
+
+<!-- Principal Message Section -->
+<section class="principal-message">
+    <div class="principal-container">
+        <div class="principal-image">
+            <img src="https://media.istockphoto.com/id/1364388471/photo/multiracial-male-principal-standing-outdoors-on-campus.webp?a=1&b=1&s=612x612&w=0&k=20&c=U82QwrAO4OZAbvDsxEAGWUtwTo0VSkvM2omMIFZXN8U=" alt="Principal Image">
+        </div>
+        <div class="principal-text">
+            <p class="message">
+                At our School, we aim to empower students with the skills, knowledge, and values needed for success in a global context.
+            </p>
+            <div class="signature-section">
+                <hr class="signature-line">
+                <p class="signature">
+                    Joseph Ken<br>
+                    <span>Principal</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Team Section -->
+<section class="team-section">
+    <h2>Meet Our Team Of Dedicated Educators</h2>
+    <div class="team-grid">
+        <div class="team-member">
+            <img src="https://media.istockphoto.com/id/1288582760/photo/close-up-smiling-business-man-standing-in-the-office.jpg?s=612x612&w=0&k=20&c=m-7wbFRCcEjB6VDvkKO_SuXmAyZzaOPLV-erXZnppGU=" alt="Team Member">
+            <div class="overlay">
+                <p class="name">Andy R.K</p>
+                <p class="title">Director</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="https://media.istockphoto.com/id/2170632594/photo/photo-of-cheerful-adorable-lady-economist-financier-wear-trendy-outfit-career-growth-isolated.jpg?s=612x612&w=0&k=20&c=CzvdX4ZKs6XhvYwI2wcirieIk34XBkBSqK_24wRcbP0=" alt="Team Member">
+            <div class="overlay">
+                <p class="name">Sarah J.L</p>
+                <p class="title">Lecturer</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="https://media.istockphoto.com/id/2166489923/photo/outdoor-portrait-of-middle-aged-businesswoman-modern-urban-city-background.jpg?s=612x612&w=0&k=20&c=vmzPia_r9NSV_T6c46-GsCGSqa6ypr5X5nyD_KU1CZk=" alt="Team Member">
+            <div class="overlay">
+                <p class="name">Telly H.S</p>
+                <p class="title">Director</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="https://media.istockphoto.com/id/932070392/photo/confident-young-male-high-school-teacher.jpg?s=612x612&w=0&k=20&c=oDoqGy0uyRsSID2CC585SJUfdc7KfKdcbmhKs9KAZiQ=" alt="Team Member">
+            <div class="overlay">
+                <p class="name">Jack M.L</p>
+                <p class="title">Lecturer</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="https://media.istockphoto.com/id/1370735987/photo/confident-successful-female-high-school-principal-leans-against-building.jpg?s=612x612&w=0&k=20&c=WxIe9BGrYg1q7PgvfIQJpCoUNuAoMTU5eDyVPCyiUPo=" alt="Team Member">
+            <div class="overlay">
+                <p class="name">Teressa D.O</p>
+                <p class="title">Executive</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Facilities Container -->
+<div class="facilities">
+  <h2>Our Facilities</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat, turpis eget tincidunt vestibulum, quam erat tincidunt enim.</p>
+</div>
+
+<!-- Image Gallery Below Facilities Container -->
+<div class="facilities-bottom-gallery">
+  <img src="https://media.istockphoto.com/id/2155852442/photo/sofas-in-the-public-leisure-area-in-the-library.jpg?s=612x612&w=0&k=20&c=aekPFrKjMf3f2vQgiVUrA6ZAlMftfAVd7mg5E7iMLNM=" alt="Gallery Image 1" />
+  <img src="https://media.istockphoto.com/id/532260464/photo/locker-room.jpg?s=612x612&w=0&k=20&c=daQdjgaM2XlV2jPMdGP-E2AnA0QjD627XuTluo58dUE=" alt="Gallery Image 2" />
+  <img src="https://media.istockphoto.com/id/511319848/photo/retro-indoor-gymnasium.jpg?s=612x612&w=0&k=20&c=QS0FQw_R1DQ2nhN7RlaQf0dspW2rNUYj7qETB7QAJwg=" alt="Gallery Image 3" />
+  <img src="https://media.istockphoto.com/id/2162383759/photo/modern-computer-classroom-with-monitors-and-blue-chairs.jpg?s=612x612&w=0&k=20&c=_SeKOHBs6qH19XcKs0quO6CZLVCJWRzk8h8g0jxGCdA=" alt="Gallery Image 4" />
+</div>
+
+<div class="testimonial-section">
+  <h2>Student Testimonials</h2>
+  <div class="carousel">
+    <button class="carousel-button prev">&#10094;</button> <!-- Left arrow -->
+    
+    <div class="testimonial-container">
+      <div class="testimonial">
+        <p>"The facilities and environment at the college are outstanding!"</p>
+        <div class="stars">
+          &#9733; &#9733; &#9733; &#9733; &#9734; <!-- 4-star rating -->
+        </div>
+        <span class="author">- John Doe</span>
+      </div>
+      <div class="testimonial">
+        <p>"The professors are very knowledgeable and supportive."</p>
+        <div class="stars">
+          &#9733; &#9733; &#9733; &#9733; &#9733; <!-- 5-star rating -->
+        </div>
+        <span class="author">- Mary Smith</span>
+      </div>
+      <div class="testimonial">
+        <p>"A wonderful experience that helped shape my future career."</p>
+        <div class="stars">
+          &#9733; &#9733; &#9733; &#9733; &#9733; <!-- 5-star rating -->
+        </div>
+        <span class="author">- Alex Brown</span>
+      </div>
+      <div class="testimonial">
+        <p>"The community and resources available are unmatched!"</p>
+        <div class="stars">
+          &#9733; &#9733; &#9733; &#9733; &#9733; <!-- 5-star rating -->
+        </div>
+        <span class="author">- Emma Wilson</span>
+      </div>
+    </div>
+    
+    <button class="carousel-button next">&#10095;</button> <!-- Right arrow -->
+   
+  </div>
+</div>
+
+  
+      <!-- Newsletter Section -->
+      <section class="newsletter">
+          <h2>Subscribe To Our Newsletter</h2>
+          <input type="email" placeholder="Enter your email">
+          <button>Subscribe Now</button>
+      </section>
+
+
+      <!-- Footer -->
+      <footer>
+          <div class="footer-logo">Data Center Vigan</div>
+          <div class="footer-info">
+              <p>123 School Street, City, Country</p>
+              <p>Email: info@datacentervigan.com | Phone: +123 456 789</p>
+          </div>
+      </footer>
+      <script src="script.js"></script>
+      <script src="index.js"></script>
+      <script src="learn.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
