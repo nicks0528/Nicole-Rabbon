@@ -1,0 +1,1001 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: #f4f6f9;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(90deg, #3f51b5, #5c6bc0);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  margin: 0 15px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffeb3b;
+}
+
+.actions .button {
+  background-color: #ff7043;
+  color: white;
+  padding: 10px 14px;
+  margin-left: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.actions .button:hover {
+  background-color: #ff5722;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 15px; /* Reduced padding for mobile */
+  }
+
+  .logo {
+    font-size: 22px; /* Smaller logo size for mobile */
+  }
+
+  .navbar {
+    flex-direction: column; /* Stack navbar links vertically */
+    align-items: flex-start; /* Align links to the start */
+    margin-top: 10px; /* Add space above navbar */
+  }
+
+  .navbar a {
+    margin: 5px 0; /* Reduced margin between links */
+    font-size: 16px; /* Smaller font size for navbar links */
+  }
+
+  .actions .button {
+    padding: 8px 12px; /* Smaller padding for buttons */
+    font-size: 14px; /* Smaller font size for buttons */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 10px; /* Add top margin for spacing */
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  .header {
+    padding: 8px 10px; /* Further reduced padding for very small screens */
+  }
+
+  .logo {
+    font-size: 20px; /* Further reduced logo size */
+  }
+
+  .navbar a {
+    font-size: 14px; /* Further reduced font size for navbar links */
+  }
+
+  .actions .button {
+    font-size: 12px; /* Further reduced button font size */
+  }
+}
+/* Main Content */
+.main-content {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Academics Section */
+.academics h1 {
+  font-size: 2.7em;
+  color: #3f51b5;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.academics p {
+  font-size: 1.15em;
+  margin-bottom: 35px;
+  color: #666;
+}
+
+/* Program Boxes */
+.programs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.program {
+  background: #f9fafb;
+  padding: 25px;
+  border-radius: 12px;
+  width: 45%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  position: relative;
+}
+
+.program::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(63, 81, 181, 0.1), rgba(255, 112, 67, 0.1));
+  border-radius: 12px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.program:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: #f1f3f5;
+}
+
+.program:hover::after {
+  opacity: 1;
+}
+
+.program h2 {
+  font-size: 1.8em;
+  color: #ff7043;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.program p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 25px;
+  background: linear-gradient(90deg, #3f51b5, #5c6bc0);
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 500;
+  margin-top: 40px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Filterable Categories */
+.filter-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-btn:hover {
+  background-color: #5c6bc0;
+}
+
+.filter-btn.active {
+  background-color: #ff7043;
+}
+
+/* Program Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  text-align: left;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Statistics Section */
+.statistics {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f4f6f9;
+  padding: 30px 0;
+ margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 2.5em;
+  color: #ff7043;
+  font-weight: bold;
+}
+
+/* Accordion FAQ Section */
+.accordion {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-title {
+  padding: 15px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  background: #f1f3f5;
+  transition: background 0.3s;
+}
+
+.accordion-title:hover {
+  background: #e3e8ee;
+}
+
+.accordion-content {
+  padding: 15px;
+  display: none;
+  background: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 20px; /* Reduced padding for mobile */
+    margin: 20px auto; /* Reduced margin for mobile */
+  }
+
+  .academics h1 {
+    font-size: 2em; /* Smaller font size for heading */
+  }
+
+  .academics p {
+    font-size: 1em; /* Smaller font size for paragraph */
+  }
+
+  .program {
+    width: 100%; /* Full width for program boxes */
+    margin-bottom: 20px; /* Space between program boxes */
+  }
+
+  .program h2 {
+    font-size: 1.5em; /* Smaller font size for program titles */
+  }
+
+  .program p {
+    font-size: 0.9em; /* Smaller font size for program descriptions */
+  }
+
+  .footer {
+    padding: 15px; /* Reduced padding for footer */
+    font-size: 0.9em; /* Smaller font size for footer text */
+  }
+/* Filterable Categories */
+.filter-container {
+  display: flex; /* Use flexbox for alignment */
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  justify-content: center; /* Center the buttons */
+  margin-bottom: 30px;
+}
+
+.filter-btn {
+  padding: 10px 20px; /* Default padding for larger screens */
+  background-color: #3f51b5; /* Default background color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 5px; /* Margin for spacing between buttons */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.filter-btn:hover {
+  background-color: #5c6bc0; /* Hover color */
+}
+
+.filter-btn.active {
+  background-color: #ff7043; /* Active button color */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .filter-container {
+    flex-direction: column; /* Stack buttons vertically on mobile */
+    align-items: center; /* Center align buttons */
+  }
+
+  .filter-btn {
+    padding: 12px 25px; /* Increased padding for mobile */
+    font-size: 1em; /* Slightly larger font size for better readability */
+    background-color: #ff7043; /* Change background color for mobile */
+    border: 1px solid #3f51b5; /* Add a border for contrast */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    width: 80%; /* Set a width for buttons to ensure they are uniform */
+    max-width: 300px; /* Maximum width for buttons */
+  }
+
+  .filter-btn:hover {
+    background-color: #ff5722; /* Darker hover color for mobile */
+    transform: scale(1.05); /* Slightly scale up on hover */
+  }
+
+  .filter-btn.active {
+    background-color: #3f51b5; /* Change active button color for mobile */
+    color: #ffffff; /* Ensure text is readable */
+  }
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: #f4f6f9;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(90deg, #3f51b5, #5c6bc0);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  margin: 0 15px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffeb3b;
+}
+
+.actions .button {
+  background-color: #ff7043;
+  color: white;
+  padding: 10px 14px;
+  margin-left: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.actions .button:hover {
+  background-color: #ff5722;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 15px; /* Reduced padding for mobile */
+  }
+
+  .logo {
+    font-size: 22px; /* Smaller logo size for mobile */
+  }
+
+  .navbar {
+    flex-direction: column; /* Stack navbar links vertically */
+    align-items: flex-start; /* Align links to the start */
+    margin-top: 10px; /* Add space above navbar */
+  }
+
+  .navbar a {
+    margin: 5px 0; /* Reduced margin between links */
+    font-size: 16px; /* Smaller font size for navbar links */
+  }
+
+  .actions .button {
+    padding: 8px 12px; /* Smaller padding for buttons */
+    font-size: 14px; /* Smaller font size for buttons */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 10px; /* Add top margin for spacing */
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  .header {
+    padding: 8px 10px; /* Further reduced padding for very small screens */
+  }
+
+  .logo {
+    font-size: 20px; /* Further reduced logo size */
+  }
+
+  .navbar a {
+    font-size: 14px; /* Further reduced font size for navbar links */
+  }
+
+  .actions .button {
+    font-size: 12px; /* Further reduced button font size */
+  }
+}
+
+/* Main Content */
+.main-content {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Academics Section */
+.academics h1 {
+  font-size: 2.7em;
+  color: #3f51b5;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.academics p {
+  font-size: 1.15em;
+  margin-bottom: 35px;
+  color: #666;
+}
+
+/* Program Boxes */
+.programs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.program {
+  background: #f9fafb;
+  padding: 25px;
+  border-radius: 12px;
+  width: 45%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  position: relative;
+}
+
+.program::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(63, 81, 181, 0.1), rgba(255, 112, 67, 0.1));
+  border-radius: 12px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.program:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: #f1f3f5;
+}
+
+.program:hover::after {
+  opacity: 1;
+}
+
+.program h2 {
+  font-size: 1.8em;
+  color: #ff7043;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.program p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 25px;
+  background: linear-gradient(90deg, #3f51b5, #5c6bc0);
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 500;
+  margin-top: 40px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Filterable Categories */
+.filter-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-btn:hover {
+  background-color: #5c6bc0;
+}
+
+.filter-btn.active {
+  background-color: #ff7043;
+}
+
+/* Program Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  text-align: left;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Statistics Section */
+.statistics {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f4f6f9;
+  padding: 30px 0;
+ margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 2.5em;
+  color: #ff7043;
+  font-weight: bold;
+}
+
+/* Accordion FAQ Section */
+.accordion {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-title {
+  padding: 15px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  background: #f1f3f5;
+  transition: background 0.3s;
+}
+
+.accordion-title:hover {
+  background: #e3e8ee;
+}
+
+.accordion-content {
+  padding: 15px;
+  display: none;
+  background: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 20px; /* Reduced padding for mobile */
+    margin: 20px auto; /* Reduced margin for mobile */
+  }
+
+  .academics h1 {
+    font-size: 2em; /* Smaller font size for heading */
+  }
+
+  .academics p {
+    font-size: 1em; /* Smaller font size for paragraph */
+  }
+
+  .program {
+    width: 100%; /* Full width for program boxes */
+    margin-bottom: 20px; /* Space between program boxes */
+  }
+
+  .program h2 {
+    font-size: 1.5em; /* Smaller font size for program titles */
+  }
+
+  .program p {
+    font-size: 0.9em; /* Smaller font size for program descriptions */
+  }
+
+  .footer {
+    padding: 15px; /* Reduced padding for footer */
+    font-size: 0.9em; /* Smaller font size for footer text */
+  }
+
+  /* Filterable Categories */
+  .filter-container {
+    display: flex; /* Use flexbox for alignment */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    justify-content: center; /* Center the buttons */
+    margin-bottom: 30px;
+  }
+
+  .filter-btn {
+    padding: 12px 25px; /* Increased padding for mobile */
+    font-size: 1em; /* Slightly larger font size for better readability */
+    background-color: #ff7043; /* Change background color for mobile */
+    border: 1px solid #3f51b5; /* Add a border for contrast */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    width: 80%; /* Set a width for buttons to ensure they are uniform */
+    max-width: 300px; /* Maximum width for buttons */
+  }
+
+  .filter-btn:hover {
+    background-color: #ff5722; /* Darker hover color for mobile */
+    transform: scale(1.05); /* Slightly scale up on hover */
+  }
+
+  .filter-btn.active {
+    background-color: #3f51b5; /* Change active button color for mobile */
+    color: #ffffff; /* Ensure text is readable */
+  }
+
+  .statistics {
+    flex-direction: column; /* Stack statistics vertically */
+    padding: 20px; /* Reduced padding for mobile */
+  }
+
+  .stat {
+    margin-bottom: 20px; /* Space between statistics */
+  }
+
+  .accordion-title {
+    font-size: 1em; /* Smaller font size for accordion titles */
+  }
+
+  .accordion-content {
+    padding: 10px; /* Reduced padding for accordion content */
+  }
+}
+
+
+  .statistics {
+    flex-direction: column; /* Stack statistics vertically */
+    padding: 20px; /* Reduced padding for mobile */
+  }
+
+  .stat {
+    margin-bottom: 20px; /* Space between statistics */
+  }
+
+  .accordion-title {
+    font-size: 1em; /* Smaller font size for accordion titles */
+  }
+
+  .accordion-content {
+    padding: 10px; /* Reduced padding for accordion content */
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .section .text,
+  .section .image {
+    width: 100%;
+    padding: 0;
+  }
+
+  .section .image {
+    margin-top: 20px;
+  }
+}
+
+ /* Responsive Design */
+ @media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .section .text,
+  .section .image {
+    width: 100%;
+    padding: 0;
+  }
+
+  .section .image {
+    margin-top: 20px;
+  }
+}
+
+/* General styling for menu icon */
+.menu-icon {
+display: none;
+font-size: 24px;
+color: #ffffff;
+cursor: pointer;
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+.menu-content {
+  display: flex; /* Show menu content on desktop */
+  flex-direction: row;
+}
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+.menu-icon {
+  display: block; /* Show menu icon on mobile */
+}
+
+.menu-content {
+  display: none; /* Hide menu content on mobile by default */
+  flex-direction: column;
+  background-color: #3f51b5;
+  padding: 10px;
+  width: 100%;
+  position: absolute;
+  top: 50px; /* Position it under the header */
+  left: 0;
+  z-index: 1;
+}
+
+/* Show menu content when active */
+.menu-content.active {
+  display: flex;
+}
+
+/* Style menu items on mobile */
+.navbar a, .actions .button {
+  margin: 10px 0;
+  color: #ffffff;
+  text-decoration: none;
+}
+}
+
+/* General Section Styles */
+.main-content {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* Filterable Categories */
+.filter-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background-color: #007BFF;
+  color: white;
+}
+
+/* Programs Section */
+.programs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.program {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.program:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+}
+
+/* Statistics Section */
+.statistics {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 40px;
+}
+
+.stat {
+  text-align: center;
+  font-size: 20px;
+}
+
+.stat-value {
+  font-size: 36px;
+  font-weight: bold;
+  color: #007BFF;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}

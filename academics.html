@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - School Website</title>
+  <link rel="stylesheet" href="css/academics.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="container">
+  <div class="logo">
+  <i class="fas fa-school"></i> 
+</div>
+    <!-- Menu Icon for Mobile Toggle -->
+    <div id="menu-icon" class="menu-icon">
+      &#9776; <!-- Unicode for hamburger menu icon -->
+    </div>
+
+    <!-- Menu Content (Initially Hidden on Mobile) -->
+    <div class="menu-content">
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="admission.html">Admissions</a>
+        <a href="academics.html">Academics</a>
+        <a href="student.html">Student Life</a>
+        <a href="community.html">Media</a>
+      </nav>
+      
+      <div class="actions">
+        <a href="learn.html" class="button">Learn More</a>
+        <a href="application.html" class="button">Apply</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+  </nav>
+        </div>
+    </header>
+    <main class="main-content">
+    <section class="academics">
+        <h1><i class="fas fa-book"></i> Academics</h1>
+        <p>Explore our diverse academic programs designed to foster a love for learning and critical thinking.</p>
+    </section>
+
+    <!-- Filterable Categories -->
+    <div class="filter-container">
+        <button class="filter-btn active" onclick="filterPrograms('all')"><i class="fas fa-list"></i> All</button>
+        <button class="filter-btn" onclick="filterPrograms('undergraduate')"><i class="fas fa-user-graduate"></i> Undergraduate</button>
+        <button class="filter-btn" onclick="filterPrograms('graduate')"><i class="fas fa-university"></i> Graduate</button>
+        <button class="filter-btn" onclick="filterPrograms('diploma')"><i class="fas fa-certificate"></i> Diploma</button>
+    </div>
+
+    <!-- Programs Section -->
+    <div class="programs">
+        <div class="program undergraduate" onclick="openModal('Computer Science', 'Explore computing and software engineering...')">
+            <h2><i class="fas fa-laptop-code"></i> Computer Science</h2>
+            <p>Explore computing and software engineering...</p>
+        </div>
+        <div class="program undergraduate" onclick="openModal('Business Administration', 'Prepare for management roles in the business world...')">
+            <h2><i class="fas fa-briefcase"></i> Business Administration</h2>
+            <p>Prepare for management roles in the business world...</p>
+        </div>
+        <div class="program graduate" onclick="openModal('Science Department', 'Dive into the world of biology, chemistry, and physics with hands-on lab experiments and research opportunities.')">
+            <h2><i class="fas fa-flask"></i> Science Department</h2>
+            <p>Dive into the world of biology, chemistry, and physics with hands-on lab experiments and research opportunities.</p>
+        </div>
+        <div class="program graduate" onclick="openModal('Mathematics Department', 'Develop problem-solving skills through engaging courses in algebra, calculus, and statistics.')">
+            <h2><i class="fas fa-square-root-alt"></i> Mathematics Department</h2>
+            <p>Develop problem-solving skills through engaging courses in algebra, calculus, and statistics.</p>
+        </div>
+        <div class="program diploma" onclick="openModal('Humanities Department', 'Explore history, literature, and philosophy to gain a deeper understanding of human culture and society.')">
+            <h2><i class="fas fa-landmark"></i> Humanities Department</h2>
+            <p>Explore history, literature, and philosophy to gain a deeper understanding of human culture and society.</p>
+        </div>
+        <div class="program diploma" onclick="openModal('Arts & Music', 'Encourage creativity through courses in painting, music theory, and performing arts.')">
+            <h2><i class="fas fa-palette"></i> Arts & Music</h2>
+            <p>Encourage creativity through courses in painting, music theory, and performing arts.</p>
+        </div>
+    </div>
+
+    <!-- Program Details Modal -->
+    <div id="programModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Program Title</h2>
+            <p id="modalDescription">Program description goes here...</p>
+        </div>
+    </div>
+
+    <!-- Statistics Section -->
+    <div class="statistics">
+        <div class="stat">
+            <span class="stat-value" data-count="98">0</span>% 
+            <i class="fas fa-graduation-cap"></i>
+            <p>Graduation Rate</p>
+        </div>
+        <div class="stat">
+            <span class="stat-value" data-count="1200">0</span>+ 
+            <i class="fas fa-users"></i>
+            <p>Alumni</p>
+        </div>
+    </div>
+</main>
+
+
+    <script src="academics.js"></script>
+    <script src="learn.js"></script>
+</body>
+</html>
