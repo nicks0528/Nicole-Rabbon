@@ -112,21 +112,12 @@ body {
     font-size: 12px; /* Further reduced button font size */
   }
 }
+
 .carousel-item img {
-  height: 500px; /* Fixed height for consistency */
+  height: 100px; /* Allow height to adjust automatically */
   width: 100%; /* Full width for responsiveness */
   object-fit: cover; /* Maintain aspect ratio and cover the area */
-  opacity: 0.5; /* Set opacity to make the image transparent */
-  transition: opacity 0.3s ease; /* Optional: Smooth transition when changing opacity */
 }
-
-/* Default style for the carousel caption text */
-.carousel-caption .carousel-text {
-  color: black; /* Default text color */
-  font-size: 2rem; /* Adjust font size if needed */
-  font-family: 'Arial', sans-serif; /* Change font family if necessary */
-}
-
 
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {

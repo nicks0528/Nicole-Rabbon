@@ -25,10 +25,10 @@
     <div class="menu-content">
       <nav class="navbar">
         <a href="index.html">Home</a>
-        <a href="admission.html">Admissions</a>
-        <a href="academics.html">Academics</a>
-        <a href="student.html">Student Life</a>
-        <a href="community.html">Media</a>
+        <a href="admission.php">Admissions</a>
+        <a href="academics.php">Academics</a>
+        <a href="student.php">Student Life</a>
+        <a href="community.php">Media</a>
       </nav>
       
       <div class="actions">
@@ -98,19 +98,19 @@
   <p>Watch some of the highlights from our recent events and initiatives.</p>
   <div class="video-grid">
     <div class="video-item">
-      <img src="https://media.istockphoto.com/id/2182037975/photo/portrait-of-charming-and-friendly-asian-female-college-students-waving-and-smiling-at-the.jpg?s=612x612&w=0&k=20&c=0b9jMo9LXI8uIdidMP_LDlRKCZMsTHNGFT8CqDNPqTg=" alt="Video 1" class="video-thumbnail" data-video-url="Video welcome in our school.mp4">
+      <img src="https://media.istockphoto.com/id/2182037975/photo/portrait-of-charming-and-friendly-asian-female-college-students-waving-and-smiling-at-the.jpg?s=612x612&w=0&k=20&c=0b9jMo9LXI8uIdidMP_LDlRKCZMsTHNGFT8CqDNPqTg=" alt="Video 1" class="video-thumbnail" data-video-url="video/Video welcome in our school.mp4">
       <p>Welcome to Our Campus</p>
     </div>
     <div class="video-item">
-      <img src="https://media.istockphoto.com/id/1429860360/photo/low-section-of-man-climbing-up-stairs-with-new-year-number-2023-2025-and-2026.jpg?s=612x612&w=0&k=20&c=yYXxyw5R-PCFTNYfSSKJpNtrVsTNGGRT-hViPO60XFY=" alt="Video 2" class="video-thumbnail" data-video-url="Sports Day at School.mp4">
+      <img src="https://media.istockphoto.com/id/1429860360/photo/low-section-of-man-climbing-up-stairs-with-new-year-number-2023-2025-and-2026.jpg?s=612x612&w=0&k=20&c=yYXxyw5R-PCFTNYfSSKJpNtrVsTNGGRT-hViPO60XFY=" alt="Video 2" class="video-thumbnail" data-video-url="video/Sports Day at School.mp4">
       <p>Annual Sports Day</p>
     </div>
     <div class="video-item">
-      <img src="https://media.istockphoto.com/id/480849669/photo/small-girl-playing-with-colors.jpg?s=612x612&w=0&k=20&c=KvpKm_ag-hm96rO-zS2OiN09-RlQ72WKNmUJURatD68=" alt="Video 3" class="video-thumbnail" data-video-url="Fun Fair & Cultural Festival at School .mp4">
+      <img src="https://media.istockphoto.com/id/480849669/photo/small-girl-playing-with-colors.jpg?s=612x612&w=0&k=20&c=KvpKm_ag-hm96rO-zS2OiN09-RlQ72WKNmUJURatD68=" alt="Video 3" class="video-thumbnail" data-video-url="video/Fun Fair & Cultural Festival at School .mp4">
       <p>Art and Culture Festival</p>
     </div>
     <div class="video-item">
-      <img src="https://media.istockphoto.com/id/973292518/photo/teacher-and-kids-talking-about-a-science-exhibit.jpg?s=612x612&w=0&k=20&c=ETcRqT6Cz-GX-m1AKUHEQm_5G-RB4W0H2zC6o43OhD8=" alt="Video 4" class="video-thumbnail" data-video-url="Royal Society Summer Science Exhibition 2016 trailer.mp4">
+      <img src="https://media.istockphoto.com/id/973292518/photo/teacher-and-kids-talking-about-a-science-exhibit.jpg?s=612x612&w=0&k=20&c=ETcRqT6Cz-GX-m1AKUHEQm_5G-RB4W0H2zC6o43OhD8=" alt="Video 4" class="video-thumbnail" data-video-url="video/Royal Society Summer Science Exhibition 2016 trailer.mp4">
       <p>Science Exhibition Highlights</p>
     </div>
   </div>
