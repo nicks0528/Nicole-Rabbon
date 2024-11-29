@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Website</title>
+  <link rel="stylesheet" href="student.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fas fa-school"></i>
+        <a href="#">DCCV</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="missions .html">Admissions</a></li>
+        <li><a href="acad.html">Academics</a></li>
+        <li><a href="student.html">Student Life</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="learn.html" class="button">Learn More</a></li>
+        <li><a href="application.html" class="button">Apply</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2><i class="fas fa-users"></i> Experience Student Life</h2>
+        <p>Join us in exploring a vibrant community filled with activities, organizations, and lifelong friendships.</p>
+    </section>
+
+    <!-- Clubs and Organizations Section -->
+    <section id="clubs">
+        <h2><i class="fas fa-user-friends"></i> Clubs and Organizations</h2>
+        <div class="club-list">
+            <div class="club-item">
+                <img src="images/art.jpg" alt="Art Club" />
+                <h3><i class="fas fa-palette"></i> Art Club</h3>
+                <p>Unleash your creativity and explore various art forms with like-minded individuals.</p>
+            </div>
+            <div class="club-item">
+                <img src="images/science.jpg" alt="Science Club" />
+                <h3><i class="fas fa-atom"></i> Science Club</h3>
+                <p>Engage in exciting experiments and learn about the wonders of science.</p>
+            </div>
+            <div class="club-item">
+                <img src="images/debate.jpg" alt="Debate Team" />
+                <h3><i class="fas fa-comments"></i> Debate Team</h3>
+                <p>Hone your public speaking skills and engage in thoughtful discussions.</p>
+            </div>
+            <div class="club-item">
+                <img src="images/drama.jpg" alt="Drama Club" />
+                <h3><i class="fas fa-theater-masks"></i> Drama Club</h3>
+                <p>Explore your passion for performing arts in a supportive environment.</p>
+            </div>
+            <div class="club-item">
+                <img src="images/robotics.jpg" alt="Robotics Club" />
+                <h3><i class="fas fa-robot"></i> Robotics Club</h3>
+                <p>Design and build robots while competing in various challenges.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events and Activities Section -->
+    <section id="events">
+        <h2><i class="fas fa-calendar-alt"></i> Events and Activities</h2>
+        <p>Join us for our exciting events that foster community spirit:</p>
+        <div class="club-list">
+            <div class="club-item">
+                <img src="images/annual.jpg" alt="Annual Spring Fair" />
+                <h3><i class="fas fa-sun"></i> Annual Spring Fair</h3>
+                <p>Join us for a day of fun, games, and community engagement!</p>
+            </div>
+            <div class="club-item">
+                <img src="https://media.istockphoto.com/id/1060900448/photo/careless-carefree-dream-dreamy-person-dance-on-corporate-feast-festive-raise-hands-up-close.webp?a=1&b=1&s=612x612&w=0&k=20&c=9FXBOk5YYpcqfefLdM3P_bRIqfyfSgoFu4vW-wQblws=" alt="Homecoming Dance" />
+                <h3><i class="fas fa-music"></i> Homecoming Dance</h3>
+                <p>A night to remember with music, dancing, and friends.</p>
+            </div>
+            <div class="club-item">
+                <img src="https://images.unsplash.com/photo-1586420085482-0b68a7a227d8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHRhbGVudCUyMHNob3d8ZW58MHx8MHx8fDA%3D" alt="Talent Show" />
+                <h3><i class="fas fa-star"></i> Talent Show</h3>
+                <p>Showcase your talents and enjoy performances from your peers!</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+     
+<footer style="background-color:darkblue; color:white; padding: 40px 20px; font-size: 14px;">
+    <div class="footer-container" style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
+      
+      
+      <!-- Contact Form Section -->
+      <div class="contact-form" style="flex: 1; min-width: 300px; margin: 10px;">
+        <h3 style="color: #ecf0f1; margin-bottom: 15px;">Contact Us</h3>
+        <form action="/submit-form" method="POST" style="display: flex; flex-direction: column;">
+          <input type="text" name="name" placeholder="Your Name" required style="padding: 10px; margin-bottom: 10px; border: none; border-radius: 4px;">
+          <input type="email" name="email" placeholder="Your Email" required style="padding: 10px; margin-bottom: 10px; border: none; border-radius: 4px;">
+          <textarea name="message" placeholder="Your Message" required rows="4" style="padding: 10px; margin-bottom: 10px; border: none; border-radius: 4px;"></textarea>
+          <button type="submit" style="background-color:#3498db; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">Send Message</button>
+        </form>
+      </div>
+      
+      <!-- School Information Section -->
+      <div class="school-info" style="flex: 1; min-width: 300px; margin: 10px;">
+        <p>&copy; 2024 DCCV. All Rights Reserved.</p>
+        <p>Phone: (123) 456-7890 | Email: info@dccv.com</p>
+      </div>
+  
+          <!-- Social Media Links Section -->
+          <div class="social-media" style="flex: 1; min-width: 300px; display: flex; flex-direction: column; align-items: center;">
+            <h3 style="color: #ecf0f1; margin-bottom: 15px;">Follow Us</h3>
+            <div style="display: flex; justify-content: center;">
+                <a href="" target="_blank" style="margin: 0 10px;">
+                    <img src="https://th.bing.com/th?id=OIP.55DCXbXlKDgEBoZhKxpzLAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Facebook" style="width: 30px; height: 30px;">
+                </a>
+                <a href="" target="_blank" style="margin: 0 10px;">
+                    <img src="https://th.bing.com/th?id=OIP.mjoG94zAqNefzlni3m2hRgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Twitter" style="width: 30px; height: 30px;">
+                </a>
+                <a href="" target="_blank" style="margin: 0 10px;">
+                    <img src="https://th.bing.com/th?id=OIP.JtmXSh_uyZBaTg1eXd-NtgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Instagram" style="width: 30px; height: 30px;">
+                </a>
+                <a href="" target="_blank" style="margin: 0 10px;">
+                    <img src="https://th.bing.com/th?id=OIP.ozDiSGJlUqI6815cRlJiNAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="LinkedIn" style="width: 30px; height: 30px;">
+                </a>
+            </div>
+        </div>
+  
+     <!-- Footer Links -->
+  <div style="text-align: center; margin-top: 20px;">
+    <a href="PRIVACY.HTML" style="color:white; margin: 0 10px;">Privacy Policy</a>
+    <a href="terms.html" style="color:white; margin: 0 10px;">Terms of Use</a>
+    <a href="contact.html" style="color:white; margin: 0 10px;">Contact Us</a>
+  </div>
+</footer>
+  <script src="menu.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+      
